@@ -1,4 +1,5 @@
 body {
+  margin: 0px;
   color: black;
   font-family: 'Arial', sans-serif;
   font-size: 14px;
@@ -20,9 +21,22 @@ h3 {
   padding: 20px 34px 13px 34px;
 }
 
+#cabecalho *:first-child {
+  margin-top: 0px;
+}
+
+#cabecalho *:last-child {
+  margin-bottom: 0px;
+}
+
 #cabecalho h1 {
   font-family: 'Kaushan Script', cursive;
   font-size: 36px;
+  margin-bottom: 0px;
+}
+
+#cabecalho h2 {
+  margin-top: 0px;
 }
 
 #unicornio-verdade {
@@ -43,6 +57,15 @@ h3 {
   width: 405px;
   text-align: center;
   float: right;
+  box-sizing: border-box;
+}
+
+#hoje *:first-child {
+  margin-top: 0px;
+}
+
+#hoje *:last-child {
+  margin-bottom: 0px;
 }
 
 #hoje img {
@@ -51,14 +74,20 @@ h3 {
 }
 
 #musica {
+  padding-top: 5px;
+  clear: left;
+}
+
+#musica p, h2, audio{
   margin-left: 12px;
 }
 
-.espacado {
+#musica p:nth-child(2n) {
   margin-left: 34px;
 }
 
-#musica > .destacado {
+#musica .destacado {
+  padding: 5px 0px 5px 0px;
   color: #004a79;
   background-color: #c4caf3;
 }
